@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="author" content="Md Siam Ansary ID 201103">
+
+	<link rel="stylesheet" type="text/css" href="cssfileID201103.css">
+
+	<style type="text/css">
+
+		body{
+			margin-right: 5em;
+			margin-left: 5em;
+			margin-top: 1em;
+			margin-bottom: 0.5em;
+			
+		}
+
+		#table01 table, tr, td{
+			border-style: solid;
+			border-width: 1.5px;
+			
+		}
+
+		#table01 {
+			border-collapse: collapse;
+		}
+
+		.nav{
+			text-align: center;
+			font-family: Calibri, sans-serif;
+		}
+
+		ol.decimal {
+			counter-reset: decimal;
+		}
+		ol.alpha {
+			counter-reset: alpha
+		}
+		ol li {
+			list-style: none;
+			position: relative;
+			margin: 5px 0;
+		}
+		ol.decimal > li:before {
+			counter-increment: decimal;
+			content:"" counter(decimal, decimal)".  "
+		}
+		ol.alpha > li:before {
+			counter-increment: alpha;
+			content:"" counter(alpha, lower-alpha)") "
+		}
+
+		ol.roman {
+			counter-reset: roman;
+		}
+
+		ol.roman > li:before {
+			counter-increment: roman;
+			content:"" counter(roman, lower-roman)". "
+		}
+
+	</style>
+
+	<title>
+		Lists page by ID 201103
+	</title>
+
+</head>
+<body>
+
+
+
+
+	<div id="divOne" style=" width: 70%; margin-right: auto; margin-left: auto; font-family: Times New Roman, Times, serif;">
+		<p style="text-decoration: underline;"><b>Lists page</b></p>
+	</div>
+
+	<table id="table01" style="width: 70%; margin-right: auto; margin-left: auto;">
+
+		<tr>
+			<td class="pictd">
+				<img src="ducu100.gif" alt="Dhaka University Logo" width="120px" height="150px" >
+			</td>
+			<td colspan="4" class="pictd">
+				<img src="iitban.gif" alt="IIT DU Picture" height="150px" width="650px" style="display: block; margin-right: auto;margin-left: auto;">
+			</td>
+			<td class="pictd">
+				<img src="iitlogo-blue.gif" alt="IIT DU Logo" width="150px" height="120px" style="padding-left: 1em">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="nav"><a href="homepageID201103.html">Home</a></td>
+			<td class="nav"><a href="linebreakspageID201103.html">Linebreaks</a></td>
+			<td class="nav"><a href="tagspageID201103.html">tags</a></td>
+			<td class="nav"><a href="listspageID201103.html">Lists</a></td>
+			<td class="nav"><a href="tablespageID201103.html">Table</a></td>
+			<td class="nav"><a href="formspageID201103.html">Forms</a></td>
+		</tr>
+
+
+		<tr>
+			<td class="tdbody" colspan="6" style="vertical-align: text-top;height: 30em;">
+				
+				<div id="divDiff" style="font-family: Times New Roman, Times, serif; padding-left: 0.5em;">
+
+					<p class="topicClass" style="font-weight: 900; font-size: 1.6em;">A nested List:</p>
+
+					<ol class="decimal">
+						<li>&nbsp Chapter One
+							<ol class="alpha">
+								<li>&nbsp Section One</li>
+								<li>&nbsp Section Two</li>
+								<li>&nbsp Section Three</li>
+							</ol>
+						</li>
+						<li>&nbsp Chapter Two
+							<ol class="alpha">
+								<li>&nbsp Section One
+									<ol class="roman">
+										<li>&nbsp Subsection One</li>
+										<li>&nbsp Subsection Two</li>
+									</ol>
+								</li>
+								
+								<li>&nbsp Section Two</li>
+							</ol>
+						</li>
+						<li>&nbsp Chapter Three
+							<ol class="alpha">
+								<li>&nbsp Section One</li>
+								<li>&nbsp Subsection One</li>
+							</ol>
+						</li>
+					</ol>
+
+					
+
+				</div>
+
+			</td>
+		</tr>
+
+		
+
+	
+		
+		<tr>
+			<td colspan="6">
+				<div class="copyrightdiv" style="margin-right: auto;margin-left: auto;text-align: center; font-weight: bold;font-family: Times New Roman, Times, serif;">
+					<span>Copyright &copy; 2020, by Md. Siam Ansary</span>
+				</div>
+			</td>
+		</tr>
+
+	</table>
+
+	<div class="fixed01">
+		<a href="https://www.du.ac.bd/" target="_blank" class="dulink"></a><br><br>
+		<a href="http://www.iit.du.ac.bd/" target="_blank" class="iitlink"></a><br><br>
+		<a href="https://www.du.ac.bd/coronavirus" target="_blank" class="covidlink"></a><br>
+	</div>
+
+	<div class="fixed02">
+		<div class="name"></div><br>
+		<a href="https://github.com/MdSiamAnsary/" target="_blank" class="githublink"></a><br>
+		<a href="https://www.linkedin.com/in/md-siam-ansary/" target="_blank" class="linkedinlink"></a><br>
+		
+	</div>
+
+	<div id="listpageanimdiv">
+		
+	</div>
+
+
+
+
+</body>
+</html>

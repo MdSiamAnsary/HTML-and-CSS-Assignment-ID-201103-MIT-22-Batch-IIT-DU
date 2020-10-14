@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="author" content="Md Siam Ansary ID 201103">
+
+	<link rel="stylesheet" type="text/css" href="cssfileID201103.css">
+
+	<style type="text/css">
+
+		body{
+			margin-right: 5em;
+			margin-left: 5em;
+			margin-top: 1em;
+			margin-bottom: 0.5em;
+			
+		}
+
+		#table01 table, tr, td{
+			border-style: solid;
+			border-width: 1.5px;
+			
+		}
+
+		#table01, #tableRegForm {
+			border-collapse: collapse;
+		}
+
+		.nav{
+			text-align: center;
+			font-family: Calibri, sans-serif;
+		}
+
+		#tableRegForm table, #tableRegForm tr, #tableRegForm td{
+			
+			border-style: solid;
+			border-width: 1.5px;
+		}
+
+		.tableRegFormColOne{
+			padding-right: 4em;
+			padding-bottom: 13px;
+			padding-left: 0.5em;
+		}
+
+		.dropdownclass
+		{
+			width: 100%;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+	</style>
+
+	<title>
+		Forms page by ID 201103
+	</title>
+
+</head>
+<body>
+
+
+
+
+	<div id="divOne" style=" width: 70%; margin-right: auto; margin-left: auto; font-family: Times New Roman, Times, serif;">
+		<p style="text-decoration: underline;"><b>Form page</b></p>
+	</div>
+
+	<table id="table01" style="width: 70%; margin-right: auto; margin-left: auto;">
+
+		<tr>
+			<td class="pictd">
+				<img src="ducu100.gif" alt="Dhaka University Logo" width="120px" height="150px" >
+			</td>
+			<td colspan="4" class="pictd">
+				<img src="iitban.gif" alt="IIT DU Picture" height="150px" width="650px" style="display: block; margin-right: auto;margin-left: auto;">
+			</td>
+			<td class="pictd">
+				<img src="iitlogo-blue.gif" alt="IIT DU Logo" width="150px" height="120px" style="padding-left: 1em">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="nav"><a href="homepageID201103.html">Home</a></td>
+			<td class="nav"><a href="linebreakspageID201103.html">Linebreaks</a></td>
+			<td class="nav"><a href="tagspageID201103.html">tags</a></td>
+			<td class="nav"><a href="listspageID201103.html">Lists</a></td>
+			<td class="nav"><a href="tablespageID201103.html">Table</a></td>
+			<td class="nav"><a href="formspageID201103.html">Forms</a></td>
+		</tr>
+
+		<tr>
+			<td class="tdbody" colspan="6" style="vertical-align: text-top;height: 30em;">
+				
+				<div id="divDiff">
+
+					<p style="font-weight: 900; font-size: 1.6em; padding-left: 0.5em">Registration Form</p>
+
+					<form method="GET" id="my_form"></form>
+
+					<table id="tableRegForm" style="margin-left: 5em; font-family: Times New Roman, Times, serif;">
+
+						<tr>
+
+							<td class="tableRegFormColOne">
+								Name
+							</td>
+
+							<td class="tableRegFormColTwo" style="width: 15em; padding-left: 1em; padding-right: 1em; padding-bottom: 0.5em">
+								<input type="text" id="name" name="name" form="my_form" style="width: 95% ;">
+							</td>
+
+						</tr>
+
+						<tr>
+							<td class="tableRegFormColOne">
+								Email
+							</td>
+
+							<td class="tableRegFormColTwo" style="width: 15em; padding-left: 1em; padding-right: 1em; padding-bottom: 0.5em">
+								<input type="email" id="email" name="email" form="my_form" style="width: 95%">
+							</td>
+
+						</tr>
+
+						<tr>
+							<td class="tableRegFormColOne">
+								Password
+							</td>
+
+							<td class="tableRegFormColTwo" style="width: 15em; padding-left: 1em; padding-right: 1em; padding-bottom: 0.5em">
+								<input type="password" id="password" name="password" form="my_form" style="width: 95%">
+							</td>
+						</tr>
+
+						<tr>
+							<td class="tableRegFormColOne">
+								Confirm Password
+							</td>
+
+							<td class="tableRegFormColTwo" style="width: 15em; padding-left: 1em; padding-right: 1em; padding-bottom: 0.5em">
+								<input type="password" id="confirmpassword" name="confirmpassword" form="my_form" style="width: 95%">
+							</td>
+						</tr>
+
+						<tr>
+							<td class="tableRegFormColOne">
+								Gender
+							</td>
+
+							<td class="tableRegFormColTwo" style="width: 15em; padding-left: 1em; padding-right: 1em; padding-bottom: 0.5em">
+								<input type="radio" id="male"   name="gender" form="my_form" value="male">		<label for="male">Male</label> &nbsp
+								<input type="radio" id="female" name="gender" form="my_form" value="female">	<label for="female">Female</label>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="tableRegFormColOne">
+								Language
+							</td>
+
+							<td class="tableRegFormColTwo" style="width: 15em; padding-left: 1em; padding-right: 1em; padding-bottom: 0.5em">
+								<input type="checkbox" id="language1" name="language1" form="my_form" value="Bangla"><label for="language1">Bangla</label> &nbsp &nbsp
+								<input type="checkbox" id="language2" name="language2" form="my_form" value="English"><label for="language2">English</label>
+							</td>
+
+						</tr>
+
+						<tr>
+							<td class="tableRegFormColOne">
+								Country
+							</td>
+
+							<td style="width: 15em; padding-left: 2em; padding-right: 1em; padding-bottom: 0.5em; ">
+								<select id="countries" name="countries" form="my_form">
+									<option class="dropdownclass" value="Bangladesh">Bangladesh</option>
+									<option class="dropdownclass" value="Finland">Finland</option>
+									<option class="dropdownclass" value="Scotland">Scotland</option>
+									<option class="dropdownclass" value="Russia">Russia</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="tableRegFormColOne" style="vertical-align: top;">
+								Biography
+							</td>
+
+							<td style="width: 15em; padding-left: 1.25em; padding-right: 1em; padding-bottom: 0.5em; padding-top: 0.4em">
+
+								<textarea name="message" form="my_form" rows="5" cols="30">
+
+								</textarea>	
+							</td>
+						</tr>
+
+						<tr>
+							<td id="submittd" colspan="2" style="padding-top: 0.2em; padding-bottom: 0.4em; padding-left: 10em; font-family: Arial, Helvetica, sans-serif;">
+								<input type="submit" value="Submit" form="my_form" style="padding-top:0.5em; padding-bottom:0.5em;padding-right: 1.2em; padding-left:0.5em">
+							</td>
+						</tr>
+
+
+
+					</table>
+
+				</div>
+
+			</td>
+		</tr>
+
+	
+		
+		<tr>
+			<td colspan="6">
+				<div class="copyrightdiv" style="margin-right: auto;margin-left: auto;text-align: center; font-weight: bold; font-family: Times New Roman, Times, serif;">
+					<span>Copyright &copy; 2020, by Md. Siam Ansary</span>
+				</div>
+			</td>
+		</tr>
+
+	</table>
+
+	<div class="formsfixed01">
+		<a href="https://www.du.ac.bd/" target="_blank" class="dulink"></a><br><br>
+		<a href="http://www.iit.du.ac.bd/" target="_blank" class="iitlink"></a><br><br>
+		<a href="https://www.du.ac.bd/coronavirus" target="_blank" class="covidlink"></a><br>
+	</div>
+
+	<div class="formsfixed02">
+		<div class="name"></div><br>
+		<a href="https://github.com/MdSiamAnsary/" target="_blank" class="githublink"></a><br>
+		<a href="https://www.linkedin.com/in/md-siam-ansary/" target="_blank" class="linkedinlink"></a><br>
+		
+	</div>
+
+	<div id="formspageanimdiv">
+		
+	</div>
+
+
+
+
+</body>
+</html>

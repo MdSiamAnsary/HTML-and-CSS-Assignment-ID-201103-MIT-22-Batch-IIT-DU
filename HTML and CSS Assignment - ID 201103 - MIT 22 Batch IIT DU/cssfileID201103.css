@@ -1,0 +1,152 @@
+body{
+	background-color: rgb(221, 235, 229);
+	background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("dhakauniversitypic01.jpg");
+}
+
+#divOne{
+	background-color: rgb(245, 203, 179);
+	font-size: 1.1em;
+}
+
+.nav{
+	font-size: 1.5em;
+	background-image: linear-gradient(to bottom right, rgb(252, 197, 202) , rgb(160, 151, 252));
+	text-transform: capitalize;
+	font-variant: small-caps;
+	margin-top: 0.3em;
+}
+
+.tdbody{
+	background-image: linear-gradient(to bottom right, rgb(133, 222, 135, 0.8) , rgb(240, 77, 48, 0.8));
+	text-transform: capitalize;
+	font-variant: small-caps;
+	font-size: 1em;
+}
+
+.hometdbody, .linebreakstdbody, .tagstdbody
+{
+	background-image: linear-gradient(to bottom right, rgb(133, 222, 135, 0.8) , rgb(240, 77, 48, 0.8));
+	text-transform: capitalize;
+	font-variant: small-caps;
+	font-size: 1em;
+	padding-right: 0.5em;
+}
+
+
+.descripClass{
+	text-transform: capitalize;
+	font-variant: small-caps;
+	font-size: 1.5em;
+	text-align: justify;
+	text-justify: inter-word;
+	
+}
+
+.copyrightdiv{
+	background-image: linear-gradient(to bottom right, rgb(252, 197, 202) , rgb(160, 151, 252));
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+
+#tableInside{
+	background-image: linear-gradient(to bottom right, rgb(123, 202, 135, 0.9) , rgb(240, 177, 48, 0.9));
+	font-weight: bold;
+}
+
+.decimal{
+	text-transform: capitalize;
+	font-variant: small-caps;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.pictd{
+	background-color: rgb(255, 247, 248);
+
+}
+
+#table01 table, tr, td{
+	border-style: solid;
+	border-width: 1.5px;
+	border-color: rgb(255, 247, 248);
+}
+
+a:link { color: black; }
+a:visited { color: green; }
+a:hover { color: rgb(240, 24, 42); ; }
+a:active { color: blue;}
+
+div.fixed01 {
+	position: fixed;
+	top: 1em;
+	right: 0.3em;
+	width: 270px;
+	border: 3px solid #73AD21;
+	background-color: rgb(255, 250, 179);
+	font-family: lora;
+	font-weight: bold;
+	font-size: 0.95em;
+}
+
+.dulink::before{ content: "Dhaka University";}
+.covidlink::before{ content: "Covid 19 Info";}
+.iitlink::before{content: "IIT Website";}
+.dulink::after, .covidlink::after, .iitlink::after
+ { content: " (" attr(href) ")"; }
+
+ div.fixed02 {
+	position: fixed;
+	bottom: 1em;
+	right: 0.3em;
+	width: 250px;
+	border: 3px solid #73AD21;
+	background-color: rgb(255, 250, 179);
+	font-family: lora;
+	font-weight: bold;
+	font-size: 0.95em;
+}
+
+.name::before{content: "Md Siam Ansary"}
+.name{
+	font-weight: 900;
+	font-size: 1.5em;
+}
+.githublink::before{content: "GitHub Profile"}
+.linkedinlink::before{content: "LinkedIn Profile"}
+
+
+#tableRegForm, .dropdownclass, #submittd{
+	font-size: 1.05em;
+	font-variant: normal;
+}
+
+.formsfixed01, .formsfixed02, .tablefixed01, .tablefixed02, .homefixed01, .homefixed02{
+	display: none;
+}
+
+#formspageanimdiv, #tablespageanimdiv, #homepageanimdiv, #linebreakanimdiv, #tagspageanimdiv, #listpageanimdiv
+{	
+	width: 11em;
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
+	background: black;
+	position: relative;
+	left: 0.3em;
+	animation: mymove 10s infinite;
+	font-family: lora;
+	color: white;
+}
+
+@keyframes mymove {
+	from {bottom: 120px;}
+	to {bottom: 750px;}
+}
+
+#homepageanimdiv::before{ content:"Home page"; }
+#formspageanimdiv::before{ content:"Form page"; }
+#tablespageanimdiv::before{ content:"Tables page"; }
+#linebreakanimdiv::before{ content:"Line breaks page"; }
+#tagspageanimdiv::before{ content:"Tags page"; }
+#listpageanimdiv::before{ content:"Lists page"; }
